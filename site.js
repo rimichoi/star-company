@@ -30,6 +30,33 @@ const KAKAO_CHANNEL_URL = "";
     });
   }
 
+  var tabs = [].slice.call(document.querySelectorAll('.benefitNav [role="tab"]'));
+
+  if (tabs.length) {
+    var select = function (index, focus) {
+      tabs.forEach(function (tab, i) {
+        var on = i === index;
+        tab.setAttribute("aria-selected", String(on));
+        tab.tabIndex = on ? 0 : -1;
+        document.getElementById(tab.getAttribute("aria-controls")).hidden = !on;
+      });
+      if (focus) tabs[index].focus();
+    };
+
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () {
+        select(i);
+      });
+      tab.addEventListener("keydown", function (e) {
+        var step = e.key === "ArrowDown" || e.key === "ArrowRight" ? 1
+          : e.key === "ArrowUp" || e.key === "ArrowLeft" ? -1 : 0;
+        if (!step) return;
+        e.preventDefault();
+        select((i + step + tabs.length) % tabs.length, true);
+      });
+    });
+  }
+
   if (KAKAO_CHANNEL_URL) {
     document.querySelectorAll("[data-kakao]").forEach(function (el) {
       el.href = KAKAO_CHANNEL_URL;

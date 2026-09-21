@@ -5,11 +5,11 @@ STAR COMPANY LTD. 홈페이지
 - about.html      회사소개
 - partners.html   파트너브랜드 (연동사 13 · 프랜차이즈 22)
 - branch.html     지사모집
-- rider.html      배달기사 모집
+- benefits.html   혜택 (지사장·라이더 대상 본사 지원 6종)
 - customer.html   고객센터
-- download.html   프로그램 다운로드 (스타콜 다운로드 페이지로 연결)
+- download.html   프로그램 다운로드 (설치파일 직접 다운로드 9종)
 - style.css       전 페이지 공통 스타일
-- site.js         모바일 메뉴 토글, 카카오톡 채널 버튼 설정
+- site.js         모바일 메뉴 토글, 혜택 탭 전환, 카카오톡 채널 버튼 설정
 
 에셋 (assets/)
 - hero-bg.jpg / .webp   홈 히어로 배경. 원본 home.png 에서 사진만 남기고 재가공
