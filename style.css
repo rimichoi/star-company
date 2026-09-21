@@ -110,6 +110,7 @@ a{color:inherit;text-decoration:none}
 .quickCard strong{font-size:18px;font-weight:800}
 .quickCard span{margin-top:8px;color:var(--text-muted);font-size:14px;line-height:1.65}
 .quickCard em{margin-top:auto;padding-top:16px;font-style:normal;font-weight:800;font-size:14px;color:var(--accent)}
+.quickGrid--trio{grid-template-columns:repeat(3,1fr)}
 
 /* ---------- 연결 생태계 ---------- */
 .flowGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
@@ -132,6 +133,7 @@ a{color:inherit;text-decoration:none}
 .contactGrid h2{margin:8px 0 12px;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.02em;font-weight:800}
 .contactGrid p{margin:0;color:var(--text-muted)}
 .contactActions{display:flex;flex-wrap:wrap;gap:12px}
+.contactActions--center{justify-content:center}
 .contactTag{width:150px;height:auto;opacity:.95}
 
 /* ---------- 공통 푸터 ---------- */
@@ -170,6 +172,8 @@ a{color:inherit;text-decoration:none}
 .callout .bigNum{font-size:clamp(34px,6vw,50px);font-weight:800;letter-spacing:-.03em}
 .callout p{margin:0;color:var(--text-muted)}
 .callout .btn{justify-self:center;margin-top:14px}
+/* footerTel 은 inline-flex 라 그리드 항목이 되면 폭을 다 먹고 내용이 왼쪽에 붙는다 */
+.callout .footerTel{justify-self:center}
 
 /* 다운로드 */
 .downloadGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
