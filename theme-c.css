@@ -9,6 +9,8 @@
   --text-muted:#4b5666;
   --text-dim:#6f7b8a;
   background:#f3f6fa;
+  /* body 에서 계산된 흰색이 그대로 상속된다 — 토큰만 바꿔선 글씨가 안 바뀐다 */
+  color:var(--text);
 }
 .band--soft{background:#e8eef5}
 .band .eyebrow{color:var(--accent)}
@@ -24,3 +26,4 @@
 /* 사진 패널 위 문구는 오버레이가 어두우므로 흰 글씨 유지 */
 .band .benefitCopy h2,.band .promoTitle{color:#fff}
 .band .benefitCopy p{color:#dbe5ef}
+.band .splitText strong{color:var(--text)}

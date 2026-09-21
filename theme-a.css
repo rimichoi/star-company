@@ -58,3 +58,10 @@ body{background:var(--bg)}
 .hero h1{color:#fff}
 /* pageHero 의 방사형 그라데이션은 어두운 색이 박혀 있어 밝은 값으로 갈아끼운다 */
 .pageHero{background:radial-gradient(circle at 78% 28%,#dceaf9 0,#eef4fb 34%,var(--bg) 72%)}
+
+/* contactBand 도 pageHero 와 같이 어두운 색이 박혀 있다 */
+.contactBand{background:radial-gradient(circle at 78% 30%,#dceaf9 0,#eef4fb 34%,var(--bg) 70%)}
+.contactTag{content:url("assets/tagline-dark.png")}
+.btnGhost{border-color:#b9c9dc;color:#1f2a3a;background:#fff}
+.btnGhost:hover{border-color:var(--accent-strong);color:var(--accent)}
+.splitText strong{color:var(--text)}
