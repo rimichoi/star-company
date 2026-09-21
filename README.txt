@@ -8,15 +8,16 @@ STAR COMPANY LTD. 홈페이지
 - benefits.html   혜택 (지사장·라이더 대상 본사 지원 6종)
 - customer.html   고객센터
 - download.html   프로그램 다운로드 (설치파일 직접 다운로드 9종)
-- style.css       전 페이지 공통 스타일. 헤더·히어로·contactBand·푸터는 다크,
-                  본문 .band 섹션은 라이트 (파일 끝 "본문 섹션 라이트 톤")
+- style.css       전 페이지 공통 스타일. 라이트 톤. 사진 위(히어로·혜택 패널)만
+                  어두운 오버레이에 흰 글씨 (파일 끝 "라이트 톤 보정")
 - site.js         모바일 메뉴 토글, 혜택/문의 탭 전환, 문의 폼 발송, 카카오톡 채널 버튼 설정
 
 에셋 (assets/)
 - hero-bg.jpg / .webp   홈 히어로 배경. 원본 home.png 에서 사진만 남기고 재가공
-- logo.png              헤더·히어로·푸터 공용 로고 (투명)
 - favicon.png           파비콘
-- tagline.png           "함께 만드는 더 나은 내일, 스타컴퍼니!" 손글씨
+- logo.png / logo-dark.png   흰 배경엔 dark, 사진 위(홈 히어로)엔 흰 로고
+- tagline.png / -dark.png    "함께 만드는 더 나은 내일, 스타컴퍼니!" 손글씨
+- hero-branch.jpg            지사 문의 히어로 배경 (로고 벽 + 배달 스쿠터)
 - partners/*.png        파트너 브랜드 로고 35종
 - benefits/*.jpg        혜택 페이지 패널 배경 6종 + 프로모션 카드 2종
 
