@@ -17,7 +17,7 @@ STAR COMPANY LTD. 홈페이지
 - favicon.png           파비콘
 - logo.png / logo-dark.png   흰 배경엔 dark, 사진 위(홈 히어로)엔 흰 로고
 - tagline.png / -dark.png    "함께 만드는 더 나은 내일, 스타컴퍼니!" 손글씨
-- hero-branch.jpg            지사 문의 히어로 배경 (로고 벽 + 배달 스쿠터)
+- hero-sub.jpg               서브페이지 6종 공용 히어로 배경 (로고 벽 + 배달 스쿠터)
 - partners/*.png        파트너 브랜드 로고 35종
 - benefits/*.jpg        혜택 페이지 패널 배경 6종 + 프로모션 카드 2종
 
