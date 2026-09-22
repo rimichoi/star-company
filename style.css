@@ -163,6 +163,8 @@ a{color:inherit;text-decoration:none}
 /* ---------- 하위 페이지 ---------- */
 .pageHero{padding:clamp(56px,7vw,86px) 0;background:radial-gradient(circle at 78% 28%,#0a3152 0,#06192b 32%,var(--bg) 70%);border-bottom:1px solid var(--line-soft)}
 .pageHero--photo{position:relative;isolation:isolate;overflow:hidden;background:#241a4d}
+/* 11.5vw = h1 clamp x 1.15 x 2줄. 이 예약이 풀리면 페이지 이동 때 히어로 높이가 튄다. */
+.pageHero--photo .shell{display:grid;align-content:center;min-height:calc(clamp(73.6px,11.5vw,124.2px) + 114px)}
 .pageHeroBg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 72%}
 .pageHero--photo::after{position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(10,6,28,.92) 0%,rgba(10,6,28,.7) 44%,rgba(10,6,28,.22) 100%);content:""}
 .pageHero h1{margin:10px 0 16px;font-size:clamp(32px,5vw,54px);line-height:1.15;letter-spacing:-.03em;font-weight:800}
